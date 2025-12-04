@@ -1,0 +1,160 @@
+.box{
+  
+    border:none;
+    width: 530px;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 20px;
+    padding-left: 15px;
+     transition: opacity 0.15s;
+
+
+    }
+
+    .box:hover{
+        background-color:aquamarine;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+         opacity:0.4;
+;
+    }
+
+    .head{
+        text-align: center;
+       color: darkslateblue;
+    }
+
+    .words{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+
+
+
+    
+    .link{
+
+        color:rgb(0, 113, 133);
+        
+    }
+
+    .link:hover{
+
+        cursor: pointer;
+        color: brown;
+
+       
+
+
+
+    }
+
+    .Nike{
+
+        font-weight: bolder;
+        font-size:20px;
+    }
+
+    .Nike:hover{
+
+        cursor: pointer;
+        
+    }
+
+
+
+
+    .stock{
+
+        font-weight: bold;
+        color: rgb(0,118,0);
+    }
+
+    .stock:hover{
+
+        text-decoration:underline;
+        cursor: pointer;
+    }
+
+
+
+    .cart{
+
+        padding-left: 11px;
+        padding-right: 11px;
+        width: 100px;
+        padding: 8px;
+        border-radius: 20px;
+        border: none;
+        background-color:rgb(255,216, 20) ;
+        transition: opacity 0.15s;
+    }
+
+    .cart:hover{
+         opacity:0.4;
+         box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+    }
+
+    .cart:active{
+        opacity:0.10;
+    }
+
+    .Buy{
+
+        padding-left: 11px;
+        padding-right: 11px;
+        width: 100px;
+        padding: 8px;
+        border-radius: 20px;
+        border: none;
+        margin-left: 10px;
+        background-color: rgb(255,164, 28);
+        transition: opacity 0.15s;
+    }
+
+
+    .Buy:hover{
+         opacity:0.4;
+         box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .Buy:active{
+        opacity:0.10;
+
+    }
+
+    .submit{
+        background-color: rgba(11, 187, 55, 0.877);
+        border: 2px solid rgb(110, 114, 111);
+        color: rgb(249, 255, 251);
+        border-radius: 10px;
+        padding: 6px;
+        padding-top: 5px;
+        margin-top: 45px;
+        font-weight: bolder;
+        font-size: 20px;
+        border: none;
+        
+    }
+
+
+    .box2{
+
+        border: 2px solid black;
+        text-align: center;
+        width: 500px;
+        margin-left: 550px;
+        padding: 15px;
+        height: 250px;
+        background-color: #f9f9f9;
+        border: none;
+        border-radius: 15px;
+    }
+
+   input{
+    width: 210px;
+    height: 25px;
+    padding:10px ;
+
+   }
