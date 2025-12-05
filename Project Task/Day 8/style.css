@@ -136,8 +136,8 @@
         font-size: 20px;
         border: none;
         
+        
     }
-
 
     .box2{
 
@@ -150,6 +150,7 @@
         background-color: #f9f9f9;
         border: none;
         border-radius: 15px;
+        padding-bottom: 65px;
     }
 
    input{
@@ -158,3 +159,68 @@
     padding:10px ;
 
    }
+
+   .skills{
+    padding-left: 45px;
+    
+   }
+   .Mobile{
+
+    padding-left: 11px;
+
+
+   }
+
+.funny::first-letter{
+
+    font-size: 50px;
+  font-weight: 700;
+  color: crimson;
+}
+
+.funny::selection {
+  background: #5e35b1;
+  color: #5cd616;
+}
+
+.pricing-box{
+
+    text-align: center;
+    border-color:black ;
+    width: 300px;
+    margin-left: 750px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.price{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+   
+}
+
+.features{
+
+    font-weight: bolder;
+   
+}
+
+.features:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn{
+ 
+    font-weight: bold;
+    color: rgb(15, 1, 1);
+   border: none;
+    border-color: black;
+   padding: 10px;
+    background-color:rgb(255,216, 20) ;
+    border-radius: 15px;
+
+}
