@@ -1,0 +1,192 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  height: 2000px;
+  background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+}
+
+.dotimage{
+  width: 250px;
+  margin-bottom: 5px;
+}
+
+.textbody{
+  width:250px;
+  margin-left:15px;
+  
+}
+
+.article{
+  box-shadow:2px 2px 2px 2px gray;
+  width:250px;
+  padding:15px;
+  position:sticky;
+  left:800px;
+  
+  
+}
+
+.card-color{
+  background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+  width: 250px;
+  height:250px;
+  border-radius: 10px;
+}
+
+.card1{
+  margin-left:10px;
+  margin-top:20px;
+  font-weight: bold;
+}
+
+.card-box{
+  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+  box-shadow: 1px 1px 8px 1px gray;
+  width: 250px;
+  height:340px;
+  padding:20px;
+  border-radius: 10px;
+}
+
+.all-card-box{
+  display:flex;
+  gap:30px;
+}
+
+.inside-box{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 35px;
+  margin-top:120px;
+
+}
+
+.inside-box2{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  margin-top:120px;
+  margin-left: 35px;
+}
+
+.card-box:hover{
+  height: 350px;
+  margin-top:20px;
+  transition: 500ms;
+}
+
+.header-bar{
+  box-shadow: 2px 2px 2px 2px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  border-radius: 10px;
+  position:fixed;
+  width: 98%;
+  top: 0;
+}
+
+.icons-imag{
+  width:40px;
+  
+}
+
+a{
+  text-decoration: none;
+  font-size:18px;
+  color: white;
+}
+
+.nav-title{
+  display: flex;
+  gap:30px;
+  margin-left:420px;
+  font-weight: bold;
+  
+  
+}
+
+.sidebar{
+  display: flex;
+  margin-right:30px;
+  gap:30px;
+  align-items: center;
+}
+
+button{
+  padding:10px;
+  padding-left:20px;
+  padding-right:20px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+}
+
+.icons-link{
+  display:flex;
+  gap: 25px;
+
+}
+
+.icons-imag:hover{
+  width: 50px;
+  transition:700ms;
+}
+h2{
+  margin-top:90px;
+}
+
+.product-image{
+  width:300px;
+  height:300px;
+  object-fit: contain;
+}
+
+.dress-info{
+  width:280px;
+  font-weight: bold;
+  font-size:13px;
+  margin-left:25px;
+  margin-top:15px;
+}
+
+.price-tag{
+  margin-left: 22px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.product-box{
+  background-color: #CEE5CA;
+  width:305px;
+  padding:15px;
+  border-radius: 15px;
+
+}
+
+.offer{
+  font-weight: bold;
+  background-color: black;
+  color:white;
+  padding: 5px;
+  width:65px;
+  
+}
+
+.product-all-container{
+  margin-left: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.around-button{
+  position: fixed;
+ float:right;
+}

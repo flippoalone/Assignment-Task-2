@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .HEX-value{
+      background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+      font-weight: bold;
+      font-size:30px;
+      font-family: Arial, Helvetica, sans-serif;
+      color:rgb(11, 115, 252);
+
+    }
+
+    .center-text{
+      background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+      font-size: 30px;
+      font-weight: bold;
+      justify-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .line-height{
+      background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+      font-size: 25px;
+      font-weight: bold;
+      width:950px;
+      line-height:40px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .postions-css{
+      background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+    }
+
+    .relative{
+      position: relative;
+    }
+
+    .absolute{
+      position: absolute;
+      background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+    }
+
+    .buttonQ{
+      position:fixed;
+      right:10px;
+      bottom:0;
+    }
+
+    .ESC{
+      padding:20px;
+      border: none;
+      border-radius:80px;
+      background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+      font-weight: bold;
+      color: white;
+      font-size: 15px;
+
+    }
+  </style>
+</head>
+<body>
+  
+  <h2>1.Change text color using HEX value.</h2>
+  <div class="HEX-value">
+    text color using HEX value.
+  </div>
+
+  <br>
+  <hr>
+
+  <h2>2.Center text inside a paragraph.</h2>
+
+    <div class="center-text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsum.
+      </p>
+    </div>
+
+    <br>
+    <hr>
+
+    <h2>3. Increase line-height for readability.</h2>
+
+    <div class="line-height">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fugit in unde, quisquam maxime inventore quam consequatur molestiae. Neque, vel.
+      </p>
+    </div>
+
+    <br>
+    <hr>
+
+    <h2>4.Create a relative container with an absolute child.</h2>
+
+      <div class="postions-css">
+        
+        <div>
+          <p class="relative">Lorem ipsum dolor sit amet.</p>
+        </div>
+        
+        <div class="postions-css-ab">
+          <p class="absolute">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <hr>
+
+      <h2>5.Add a fixed button to bottom-right.</h2>
+
+      <div class="buttonQ">
+        <button class="ESC">ESC</button>
+      </div>
+
+
+
+</body>
+</html>
