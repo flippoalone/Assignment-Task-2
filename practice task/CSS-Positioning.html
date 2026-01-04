@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS and Postioning</title>
+
+  <style>
+    body{
+      height:1800px;
+    }
+
+    .element-moving{
+      display: inline-block;
+      position: relative;
+      background-color: aquamarine;
+      left:250px;
+      margin-right: 40px;
+      font-weight: bold;
+      font-size:25px;
+      
+    }
+
+    .element-absolute{
+      background-color: aqua;
+      font-weight: bold;
+      font-size: 25px;
+      position: absolute;
+    }
+
+    .Fix-button{
+      background-color:crimson;
+      color: white;
+      padding: 10px;
+      border-radius: 15px;
+      border: none;
+    }
+
+    .fixed-button{
+      position: fixed;
+    }
+
+    .sticky-header{
+      background-color: tomato;
+      font-size: 25px;
+      font-weight: bold;
+      position:sticky;
+      top: 0;
+    }
+
+    .box1{
+      background-color: aqua;
+      width: 150px;
+      height: 150px;
+      margin-top:5px;
+      z-index: 1;
+
+    }
+
+    .box2{
+      background-color: aquamarine;
+      width: 150px;
+      height: 150px;
+      margin-top:25px;
+      z-index:4;
+      margin-left:20px;
+    }
+
+    .box3{
+      background-color: blueviolet;
+      width: 150px;
+      height: 150px;
+      margin-top:45PX;
+      z-index: 5;
+      margin-left:40px;
+    }
+
+    .box{
+      position:absolute;
+      left:70px;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <h1>1.Move an element using relative positioning.</h1>
+
+  <div class="element-moving">
+    Element with moving
+  </div>
+  <div class="element-moving">
+    Element with moving
+  </div>
+  <br> <hr>
+
+  <h2>2.Create an absolute element inside a parent.</h2>
+
+    <div class="element-absolute">
+      Element with Absolute
+    </div>
+    <br>
+    <br>
+     <hr>
+
+  <h3>3.Add a fixed button to the page.</h2>
+
+    <div class="fixed-element">
+      <button class="Fix-button">Fix button</button>
+    </div>
+  
+    <br> <hr>
+
+    <h3>4.Create a sticky header.</h3>
+
+    <div class="sticky-header">
+      
+      <div>Thsi is sticky header with div Element And css propety</div>
+    </div>
+     <br> <br><hr>
+
+     <h2>5.Overlap two boxes using z-index.</h2>
+
+      <div class="all-box">
+        <div class=" box box1">box1</div>
+      <div class=" box box2">box2</div>
+      <div class=" box box3">box3</div>
+      </div>
+      
+
+
+
+</body>
+</html>
