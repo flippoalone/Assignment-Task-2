@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries (Responsive Design)</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    p {
+      font-size:2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row; 
+      gap: 20px;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      flex: 1;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1.2rem;
+    }
+
+     @media (max-width: 900px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    
+    @media (max-width: 600px) {
+      body {
+        background-color: lightcoral; 
+        font-size: 14px;
+      }
+
+      .container {
+        flex-direction: column; 
+      }
+
+      p {
+        display: none;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+
+    }
+
+  </style>
+
+</head>
+<body>
+  
+   <h1>1.Change background color below 600px.</h1>
+
+   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam et eum, maiores ea eligendi.</div>
+
+   <br><hr>
+
+   <h2>2.Reduce font size on mobile screens.</h2>
+
+   <p>Resize the browser window to see the font size adjust on smaller screens.</p>
+   <br><hr>
+
+   <h2>3.Switch flex direction using media query.</h2>
+
+   <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+  </div>
+  <br><hr>
+
+  <h2>4.Hide a paragraph on mobile.</h2>
+
+  <p>This paragraph will be hidden on mobile screens (below 600px).</p>
+  <br><hr>
+
+  <h2>5.Change grid columns based on screen size.</h2>
+
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+    <div class="grid-item">Item 5</div>
+    <div class="grid-item">Item 6</div>
+  </div>
+
+
+
+
+
+</body>
+</html>
