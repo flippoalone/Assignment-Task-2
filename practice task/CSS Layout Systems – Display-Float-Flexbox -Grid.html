@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container-all{
+      background-color:burlywood;
+      height:50px;
+      display:flex;
+
+    }
+
+    .Div-element{
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+      margin-left: 70px;
+    }
+
+    .element-container{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      background-color: aqua;
+    }
+
+    .image{
+      width: 190px;
+      height: 290px;
+    }
+
+    .image-float{
+      position:static;
+      left: 40px;
+      width: 190px;
+      box-shadow: 1px 1px 5px 1px gray;
+    }
+
+    .words{
+      width: 190px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flex-items{
+      display: flex;
+      gap: 20px;
+    }
+
+    .items{
+      background-color: burlywood;
+      width: 90px;
+      height: 90px;
+    }
+
+    .flex-itemsone{
+      display: flex;
+      gap:30px;
+      justify-content: center;
+    }
+
+    .flex-itemstwo{
+      display: grid;
+      column-gap: 40px;
+      row-gap: 40px;
+      grid-template-columns:80px 50px;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <h1>1.Create one block and one inline element.</h1>
+  
+  <div class="container-all">
+    <div class="Div-element">
+      <div>Div element</div>
+      <div>Div element2</div>
+    </div>
+  </div>
+
+  <div class="element-container">
+     <p> Div inline element</p>
+     <p >Div inline element</p>
+  </div>
+  <br> <hr>
+
+  <h2>2.Float an image to the left and wrap text.</h2>
+
+    <div class="image-float">
+      <img class="image" src="pexels-norma-mortenson-7303575.jpg">
+      <p class="words">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eius magni ullam ut sint sapiente.</p>
+    </div>
+
+    <br>
+    <hr>
+
+
+    <h2>3.Create a flex container with 4 items.</h2>
+
+    <div class="flex-items">
+      <div class="items">Item 1</div>
+      <div class="items">Item 2</div>
+      <div class="items">Item 3</div>
+      <div class="items">Item 4</div>
+    </div>
+
+    <br><hr>
+
+    <h2>4.Center a div using Flexbox.</h2>
+    
+      <div class="flex-itemsone">
+      <div class="items">Item 1</div>
+      <div class="items">Item 2</div>
+      <div class="items">Item 3</div>
+      <div class="items">Item 4</div>
+    </div>
+
+    <br><hr>
+
+    <h3>5.Create a 3-column grid.</h3>
+
+    <div class="flex-itemstwo">
+      <div class="items">Item 1</div>
+      <div class="items">Item 2</div>
+      <div class="items">Item 3</div>
+      <div class="items">Item 4</div>
+      <div class="items">Item 3</div>
+      <div class="items">Item 4</div>
+    </div>
+
+
+
+
+</body>
+</html>
