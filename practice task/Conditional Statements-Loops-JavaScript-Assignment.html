@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>1.Check if a number is positive or negative</h1>
+
+    <h2>2.Print numbers from 1 to 20</h2>
+
+    <h3>3.Find even numbers between 1 and 10</h3>
+
+    <h4>4.Explain difference between while and do...while</h4>
+
+    <h5>5.Write a switch example</h5>
+
+
+    <script>
+        let number = -10; // Try changing this to 10 or 0
+
+if (number > 0) {
+    console.log("The number is Positive.");
+} else if (number < 0) {
+    console.log("The number is Negative.");
+} else {
+    console.log("The number is Zero.");
+}
+
+// Start at 1; keep going while i is less than or equal to 20; add 1 each time.
+for (let i = 1; i <= 20; i++) {
+    console.log(i);
+}
+
+for (let i = 1; i <= 10; i++) {
+    // Check if the number is divisible by 2 with no remainder
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// Start at 2, and jump by 2 every time (2, 4, 6...)
+for (let i = 2; i <= 10; i += 2) {
+    console.log(i);
+}
+
+let i = 100; // Start with a number that fails the condition
+
+while (i < 10) {
+    console.log("This will never print.");
+    i++;
+}
+
+let j = 100; // Start with a number that fails the condition
+
+do {
+    console.log("This prints exactly once!");
+    j++;
+} while (j < 10);
+
+let day = "Saturday";
+
+switch (day) {
+    // Grouping cases: Monday, Wednesday, and Friday share the same schedule
+    case "Monday":
+    case "Wednesday":
+    case "Friday":
+        console.log("Activity: Go to the Gym ");
+        break;
+
+    // Grouping cases: Tuesday and Thursday
+    case "Tuesday":
+    case "Thursday":
+        console.log("Activity: Coding Class ");
+        break;
+
+    // Grouping cases: The Weekend
+    case "Saturday":
+    case "Sunday":
+        console.log("Activity: Relax and Sleep");
+        break;
+
+    default:
+        console.log("Error: That is not a valid day.");
+}
+
+    </script>
+</body>
+</html>
