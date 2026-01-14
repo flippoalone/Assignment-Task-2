@@ -8,7 +8,15 @@
 <body>
  <h1>JavaScript Introduction, Script Tags, console.log, Comments</h1>
 
- <h2>Create an internal script and test it.</h2>
+ <h2>1.Print your name using console.log.</h2>
+
+ <h2>2.Write one single-line comment.</h2>
+ 
+ <h2>3.Write one multi-line comment.</h2>
+
+ <h2>4.Print the result of 20 + 30.</h2>
+
+ <h2>5.Create an internal script and test it.</h2>
 
  
 
@@ -23,6 +31,26 @@
   /*Print the result of 20 + 30*/
   const result = 20+30;
   console.log(result);
+
+
+/*
+ * Internal Test Script (JavaScript Version)
+ * This script calculates the sum of an array of numbers
+ * and logs the result to the console.
+ */
+
+console.log("Running JS test script...");
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Calculate sum using the reduce method
+const totalSum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+
+console.log(`The sum of numbers [${numbers}] is: ${totalSum}`);
+
+
 
 
  </script>
