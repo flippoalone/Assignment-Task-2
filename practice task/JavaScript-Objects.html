@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>1.Define a JavaScript object</h1>
+
+    <h2>2.Create an object with 3 properties</h2>
+
+    <h3>3.Access one property using dot notation</h3>
+
+    <h4>4.Add a new property to an object</h4>
+
+    <h5>5.Delete a property from an object</h5>
+
+    <script>
+
+        // 1. Defining the Object
+const car = {
+    // Properties (Key: Value)
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2022,
+    isRunning: false,
+
+    // Method (A function inside an object)
+    startEngine: function() {
+        console.log("Vroom! The engine is starting...");
+        this.isRunning = true; // 'this' refers to the 'car' object itself
+    }
+};
+
+// 2. Accessing Data (Dot Notation)
+console.log(car.brand);  // Output: Toyota
+console.log(car.year);   // Output: 2022
+
+// 3. Using a Method
+car.startEngine();       // Output: Vroom! The engine is starting...
+
+const book = {
+    title: "The Hobbit",    // Property 1 (String)
+    author: "J.R.R. Tolkien", // Property 2 (String)
+    pages: 310              // Property 3 (Number)
+};
+
+// checking if it worked
+console.log(book);
+
+
+const bookOne = {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    pages: 310
+};
+
+// Accessing the 'title' property
+console.log(bookOne.title);  // Output: The Hobbit
+
+// Accessing the 'pages' property
+console.log(bookOne.pages);  // Output: 310
+
+const bookTwo = {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien"
+};
+
+// 1. Add a new property 'genre'
+bookTwo.genre = "Fantasy";
+
+// 2. Add another property 'year'
+bookTwo.year = 1937;
+
+console.log(bookTwo);
+
+const bookThree = {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    year: 1937,
+    isAvailable: true
+};
+
+// 1. Delete the 'isAvailable' property
+delete bookThree.isAvailable;
+
+// 2. Check the result
+console.log(bookThree);
+
+
+    </script>
+</body>
+</html>
