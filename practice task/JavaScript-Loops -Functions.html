@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>1.Print numbers from 1 to 10 using a function</h1>
+
+    <h2>2.Create a function to add two numbers</h2>
+
+    <h3>3.Write a loop to print even numbers</h3>
+
+    <h4>4.Explain difference between parameter & argument</h4>
+
+    <h5>5.Convert a normal function into arrow function</h5>
+
+
+
+
+    <script>
+
+        // 1. Define the Function (The "Recipe")
+function printNumbers() {
+    console.log("Starting count...");
+    
+    for (let i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+    
+    console.log("Done!");
+}
+
+// 2. Call the Function (Cooking the meal)
+// The code above does NOTHING until you write this line:
+printNumbers();
+
+// 1. Define the Function
+// 'a' and 'b' are placeholders (parameters) for the numbers we will send later.
+function addNumbers(a, b) {
+    const sum = a + b;
+    return sum; // 'return' sends the value back to where the function was called
+}
+
+// 2. Call the Function
+// We pass in 5 and 10. These replace 'a' and 'b'.
+let result = addNumbers(5, 10);
+
+console.log("The sum is:", result); // Output: 15
+
+// Start at 0, go up to 20, add 2 each step
+for (let i = 0; i <= 20; i += 2) {
+    console.log(i);
+}
+
+for (let i = 0; i <= 20; i++) {
+    // Check if the remainder when divided by 2 is 0
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// 1. DEFINITION
+// 'name' is the PARAMETER. 
+// It is a variable waiting to receive a value.
+function greet(name) {
+    console.log("Hello, " + name);
+}
+
+// 2. INVOCATION (Call)
+// "Alice" is the ARGUMENT.
+// It is the actual data we are sending to the function.
+greet("Alice");
+
+function square(num) {
+    return num * num;
+}
+
+console.log(square(5)); // Output: 25
+
+const square = (num) => {
+    return num * num;
+};
+
+const square = num => num * num;
+
+console.logo(square);
+    </script>
+</body>
+</html>
