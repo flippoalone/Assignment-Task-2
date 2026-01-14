@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>1.Add two numbers using arithmetic operators.</h1>
+
+    <h2>2.Update a variable using +=.</h2>
+
+    <h3>3.Compare two values using ===.</h3>
+
+    <h4>4.Write an if condition for age check.</h4>
+
+    <h5>5.Create a switch with 3 cases.</h5>
+
+
+    <script>
+
+        // 1. Declare two number variables
+let number1 = 10;
+let number2 = 5;
+
+// 2. Add them together using the '+' operator
+let sum = number1 + number2;
+
+// 3. Log the result
+console.log("The sum is:", sum); // Output: 15
+
+let a = 20;
+let b = 4;
+
+console.log("Subtraction:", a - b);  // 16
+console.log("Multiplication:", a * b); // 80
+console.log("Division:", a / b);       // 5
+console.log("Remainder (Modulus):", a % 3); // 2 (20 divided by 3 is 6 with a remainder of 2)
+
+let score = 100;
+console.log("Initial Score:", score);
+
+// The Long Way:
+// score = score + 50;
+
+// The Short Way (using +=):
+score += 50; 
+
+console.log("New Score:", score); // Output: 150
+
+let message = "Hello, ";
+message += "World!"; 
+
+console.log(message); // Output: "Hello, World!"
+
+const actualNumber = 5;
+const textNumber = "5";
+
+// 1. Strict Equality (===)
+// Checks Value AND Type
+console.log(actualNumber === 5);          // true
+console.log(actualNumber === textNumber); // false
+
+// 2. Loose Equality (==) - For comparison
+// Checks Value ONLY (converts types automatically)
+console.log(actualNumber == textNumber);  // true
+
+let userAge = 20;
+const minimumAge = 18;
+
+// Check if userAge is greater than or equal to minimumAge
+if (userAge >= minimumAge) {
+    console.log("Access Granted: You are old enough.");
+} else {
+    console.log("Access Denied: You are too young.");
+}
+
+let trafficLight = "yellow";
+
+switch (trafficLight) {
+    case "red":
+        console.log("Stop! Do not move.");
+        break; // Stops the code here if this case matches
+
+    case "yellow":
+        console.log("Caution! Prepare to stop.");
+        break;
+
+    case "green":
+        console.log("Go! It is safe.");
+        break;
+
+    default:
+        // Runs if NONE of the above match (like 'else')
+        console.log("Error: Invalid light color.");
+}
+
+    </script>
+</body>
+</html>
