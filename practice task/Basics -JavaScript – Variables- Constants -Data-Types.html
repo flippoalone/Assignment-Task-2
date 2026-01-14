@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>1.Declare a variable using and change its value.</h1>
+
+    <h2>2.Create a constant and try reassigning it.</h2>
+
+    <h3>3.Store your name and age in variables.</h3>
+
+    <h4>4.Use typeof to check data types.</h4>
+
+    <h5>Create one null and one undefined variable.</h5>
+
+    <script>
+
+        // 1. Declare the variable and assign an initial value
+let currentScore = 10;
+console.log("Starting Score:", currentScore);
+
+// 2. Change (reassign) the value
+// Notice we do NOT use 'let' again, just the variable name
+currentScore = 20;
+console.log("Updated Score:", currentScore);
+
+// 3. Change it again (e.g., adding to the previous value)
+currentScore = currentScore + 5;
+console.log("Final Score:", currentScore);
+
+// 1. Declare a constant variable
+const pi = 3.14159;
+console.log("Value of pi:", pi);
+
+// 2. Attempt to reassign the value
+//  This line will cause the script to STOP with an error!
+pi = 3.14; 
+
+// 3. This line will never run because of the error above
+console.log("New value:", pi);
+
+// Store a text value (String) using quotes
+const myNames = "akash"; 
+
+// Store a number value (Number) without quotes
+let myAges = 1; 
+
+// Log them to the console to verify
+console.log("Name:", myNames);
+console.log("Age:", myAges);
+
+const myName = "akash";
+let myAge = 1;
+const isHuman = '';
+
+// Using typeof directly in console.log
+console.log("Type of myName:", typeof myNames);
+console.log("Type of myAge:", typeof myAges);
+console.log("Type of isHuman:", typeof isHuman);
+
+// Interesting Case: Arrays are technically Objects in JS
+const skills = ["Coding", "Helpfulness"];
+console.log("Type of skills:", typeof skills);
+
+
+// 1. null: Intentionally explicitly empty
+// We assign 'null' to say "this variable exists, but it has no value right now."
+let selectedProduct = null;
+console.log("Value:", selectedProduct); 
+console.log("Type:", typeof selectedProduct); // 
+
+// 2. undefined: Accidentally or implicitly empty
+// We declare it but do not give it a value. JS sets it to 'undefined' automatically.
+let userResponse;
+console.log("Value:", userResponse);
+console.log("Type:", typeof userResponse);
+
+    </script>
+</body>
+</html>
