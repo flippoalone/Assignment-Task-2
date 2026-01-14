@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>1.Define a function in your own words</h1>
+
+    <p>Instead of writing the same lines of code over and over again every time you need to do a specific task (like calculating a tax or saying "Hello"), you write it once, give it a name, and then just "call" that name whenever you need it.</p>
+
+    <h2>2.Write a function to print your name</h2>
+
+
+    <h3>3.Create a function that adds two numbers</h3>
+
+    <h4>4.Convert a normal function to arrow function</h4>
+
+    <h5>5.Identify parameters and arguments</h5>
+
+
+<script>
+
+// 1. Define
+function printMyName() {
+    console.log("My name is Gemini.");
+}
+
+// 2. Call
+printMyName(); // Output: My name is Gemini.
+
+// 1. Define with a parameter 'name'
+function printName(name) {
+    console.log("Hello, my name is " + name);
+}
+
+// 2. Call with different arguments
+printName("Alice"); // Output: Hello, my name is Alice
+printName("Bob");   // Output: Hello, my name is Bob
+
+
+// 1. Define the Function
+// 'num1' and 'num2' are parameters (placeholders)
+function addNumbers(num1, num2) {
+    let sum = num1 + num2;
+    return sum; // This sends the answer back
+}
+
+// 2. Call the Function
+// We pass in 10 and 5 as arguments (actual values)
+let result = addNumbers(10, 5);
+
+console.log(result); // Output: 15
+
+function addNumbers(num1, num2) {
+    return num1 + num2;
+};
+
+
+// 1. Function Definition
+const addNumbers = (num1, num2) => num1 + num2;
+
+// 2. Function Call
+addNumbers(10, 5);
+
+</script>
+</body>
+</html>
