@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1.What is an error in JavaScript?</h1>
+
+    <p>An Error is an event that disrupts the normal flow of your program. It essentially means something went wrong that prevents the computer from executing the code successfully.</p>
+
+    <h2>2.Difference between Syntax and Runtime Errors</h2>
+
+
+    <h3>3.Identify a Logical Error</h3>
+
+    <h4>4.Write a simple try...catch example</h4>
+
+
+    <h5>Explain why errors are important</h5>
+
+    <p>
+        Protection: They stop a program from running with bad data, which could corrupt a database or crash a server.
+        <br>
+
+Debugging: The error message acts like a map. It tells you exactly what went wrong and where (which line number), helping you fix bugs faster.
+<br>
+User Experience: By catching errors, you can show users helpful messages (like "Server is busy, try again") instead of a blank white screen.
+    </p>
+
+
+    <script>
+
+            // ERROR: Missing the closing parenthesis ')'
+console.log("Hello World"); 
+
+// Result: Uncaught SyntaxError: missing ) after argument list
+
+// The code looks fine, but 'myFunction' does not exist!
+myFunction();
+
+// Result: Uncaught ReferenceError: myFunction is not defined
+
+
+//3.Identify a logical error
+
+const num1 = 10;
+const num2 = 20;
+
+// LOGICAL ERROR:
+// Division happens before addition because of Order of Operations (PEMDAS)
+const average = num1 + num2 / 2; 
+
+console.log("Average is: " + average);
+// Output: Average is: 20  (Wait, that's wrong!)
+
+
+//4.Write a simple try...catch example
+
+try {
+  
+  // 1. Try to run this code
+  console.log("Start of try block");
+  
+  // This variable doesn't exist, so it causes an error
+  alert(missingVariable); 
+  
+  console.log("End of try block"); // This line is skipped!
+
+} catch (error) {
+  
+  // 2. If an error happens, run this code instead
+  console.log("An error occurred!");
+  console.log("Error details: " + error.message);
+
+}
+
+console.log("The program continues running...");
+
+    </script>
+</body>
+</html>
