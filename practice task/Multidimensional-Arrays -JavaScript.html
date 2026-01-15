@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>1.Define a multidimensional array</h1>
+
+    <h2>2.Create a 2D array with 3 rows</h2>
+
+    <h3>3.Access the 2nd row, 1st column value</h3>
+
+    <h4>4.Print all values using nested loops</h4>
+
+    <h5>5.Explain real-life example of 2D array</h5>
+
+
+    <script>
+
+
+// A 3x3 Grid (Matrix)
+const grid = [
+  [1, 2, 3],  // Row 0
+  [4, 5, 6],  // Row 1
+  [7, 8, 9]   // Row 2
+];
+
+
+// Get the number '1' (Row 0, Column 0)
+console.log(grid[0][0]); 
+// Output: 1
+
+// Get the number '6' (Row 1, Column 2)
+console.log(grid[1][2]); 
+// Output: 6
+
+for (let i = 0; i < grid.length; i++) {       // Loop through Rows
+  for (let j = 0; j < grid[i].length; j++) {  // Loop through Columns
+    console.log(`Row ${i}, Col ${j} = ${grid[i][j]}`);
+  }
+}
+
+const board = [
+  ['X', 'O', 'X'],
+  ['O', 'X', 'O'],
+  ['X', ' ', ' ']
+];
+
+//2.Create a 2D array with 3 rows
+
+
+// A 3x3 Matrix
+// Think of this like a spreadsheet with Rows and Columns
+const matrix = [
+  [1, 2, 3],  // Row 0
+  [4, 5, 6],  // Row 1
+  [7, 8, 9]   // Row 2
+];
+
+// --- HOW TO ACCESS DATA ---
+
+// Syntax: matrix[row_index][column_index]
+
+// Get the first item (Row 0, Col 0)
+console.log(matrix[0][0]); // Output: 1
+
+// Get the center item (Row 1, Col 1)
+console.log(matrix[1][1]); // Output: 5
+
+// Get the last item (Row 2, Col 2)
+console.log(matrix[2][2]); // Output: 9
+
+
+const classroom = [
+  ["Alice", "Bob", "Charlie"], // Front Row
+  ["David", "Eve", "Frank"],   // Middle Row
+  ["Grace", "Heidi", "Ivan"]   // Back Row
+];
+
+// Who is sitting in the Middle Row, far right?
+console.log(classroom[1][2]); // Output: Frank
+
+
+
+//3.Access the 2nd row, 1st column value
+
+
+const matrixs = [
+  [1, 2, 3],  // Index 0 (Row 1)
+  [4, 5, 6],  // Index 1 (Row 2) <--- We want this row
+  [7, 8, 9]   // Index 2 (Row 3)
+];
+
+// Accessing 2nd Row (Index 1), 1st Column (Index 0)
+const value = matrixs[1][0];
+
+console.log(value); 
+// Output: 4
+
+
+//4.Print all values using nested loops
+
+
+const matriX = [
+  [1, 2, 3],  // Row 0
+  [4, 5, 6],  // Row 1
+  [7, 8, 9]   // Row 2
+];
+
+// 1. OUTER LOOP: Goes through each Row (0, 1, 2)
+for (let i = 0; i < matriX.length; i++) {
+  
+  // 2. INNER LOOP: Goes through each Item in the current Row
+  for (let j = 0; j < matriX[i].length; j++) {
+    
+    // Print the specific value using both coordinates
+    console.log(`Row ${i}, Col ${j} = ${matriX[i][j]}`);
+  }
+}
+
+//5.Explain real-life example of 2D array
+
+
+// 0 = Empty Seat
+// 1 = Booked Seat
+
+const theater = [
+  [0, 0, 0, 1], // Row A (Index 0)
+  [0, 1, 0, 0], // Row B (Index 1)
+  [1, 0, 0, 0]  // Row C (Index 2)
+];
+
+// Checking if Row B, Seat 2 is taken:
+// theater[1][1]
+if (theater[1][1] === 1) {
+  console.log("Sorry, this seat is booked!");
+} else {
+  console.log("This seat is available.");
+}
+
+
+    </script>
+</body>
+</html>
