@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    
+    <h1>1.Click Counter App</h1>
+
+
+    <div class="clicker-container">
+  <h1>Total Clicks: <span id="counter">0</span></h1>
+  
+  <button id="click-btn">CLICK ME!</button>
+  
+  <button id="reset-btn">Reset</button>
+</div>
+
+<h2>2.Keyboard Typing Detector</h2>
+
+
+<div class="container">
+  <h2>Press any key...</h2>
+  
+  <div class="key-display">
+    <h1 id="key-name">-</h1>
+    <p>Key Code: <span id="key-code">-</span></p>
+  </div>
+</div>
+
+
+<h3>3.Live Input Preview</h3>
+
+
+<div class="container">
+  <h3>Type something below:</h3>
+  
+  <input type="text" id="user-input" placeholder="Start typing...">
+  
+  <div class="preview-box">
+    <strong>Preview:</strong>
+    <span id="output">...</span>
+  </div>
+</div>
+
+
+<h4>4.Form Submission Validator</h4>
+
+
+<div class="login-box">
+  <h2>Login</h2>
+  
+  <form id="login-form">
+    <label>Username:</label>
+    <input type="text" id="username" placeholder="Enter name">
+    
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Min 6 chars">
+    
+    <p id="error-msg"></p> <button type="submit">Sign In</button>
+  </form>
+</div>
+
+
+<h5>5.Nested Click Logger (Bubbling demo)</h5>
+
+<div id="grandparent" class="box">
+  Grandparent
+  
+  <div id="parent" class="box">
+    Parent
+    
+    <button id="child" class="box">Child (Click Me)</button>
+    
+  </div>
+</div>
+
+<h3>Log:</h3>
+<ul id="log-list"></ul>
+<button onclick="clearLog()">Clear Log</button>
+
+
+    <script src="event.js"></script>
+</body>
+</html>

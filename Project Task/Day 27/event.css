@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #222;
+  color: white;
+  margin-top: 50px;
+
+
+}
+
+#click-btn {
+  padding: 20px 40px;
+  font-size: 24px;
+  background-color: #007bff; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px #0056b3; /* 3D effect */
+}
+
+#click-btn:active {
+  transform: translateY(4px); /* Pushes down when clicked */
+  box-shadow: 0 1px #0056b3;
+}
+
+#reset-btn {
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.key-display {
+  border: 2px solid #555;
+  display: inline-block;
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: #333;
+  box-shadow: 0 5px #111;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 10px 0;
+  color: #00ffcc; /* Neon Green */
+}
+
+
+
+#user-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.preview-box {
+  background-color: #e8f0fe; /* Light Blue */
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  font-family: monospace; /* Typewriter font */
+  font-size: 18px;
+  min-height: 20px; /* Keeps box from collapsing */
+}
+
+
+.login-box {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+}
+
+input {
+  display: block;
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+#error-msg {
+  color: red;
+  font-size: 14px;
+  height: 20px; /* Keeps layout stable */
+}
+
+
+.box {
+  padding: 30px;
+  border: 2px solid black;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#grandparent { background-color: #ffcccc; } /* Red-ish */
+#parent      { background-color: #ccffcc; } /* Green-ish */
+#child       { background-color: #ccccff; } /* Blue-ish */
