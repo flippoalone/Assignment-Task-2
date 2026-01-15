@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>1.What is an event in JavaScript?</h1>
+
+    <p>An Event is a signal that something has happened on your web page. It is a notification sent by the browser to your code.</p>
+
+
+    <h2>2.Difference between Inline Events and addEventListener()</h2>
+
+    <button onclick="alert('Hello!')">Click Me</button>
+
+
+    <h3>3.Write a Mouse Click Event</h3>
+
+    <h4>4.Detect a key press</h4>
+
+
+    <h5>5.Explain event bubbling</h5>
+
+    <div id="parent" style="padding: 20px; background: red;">
+  Parent Box
+  <button id="child">Child Button</button>
+</div>
+
+
+
+<script>
+// HTML: <button id="myBtn">Click Me</button>
+
+const btn = document.getElementById("myBtn");
+
+// This keeps HTML clean and logic separate
+btn.addEventListener("click", () => {
+  console.log("Button was clicked!");
+});
+
+
+
+//3.Write a mouse click event
+
+
+// 1. Select the element
+const submitBtn = document.querySelector("#submit-button");
+
+// 2. Add the listener
+submitBtn.addEventListener("click", function() {
+  
+  // 3. The logic to run
+  document.body.style.backgroundColor = "lightblue";
+  console.log("Background changed!");
+
+});
+
+
+//4.Detect a key press
+
+// Listen to the whole page
+document.addEventListener("keydown", function(event) {
+  
+  // 'event.key' gives the value (e.g., "a", "Enter", "Escape")
+  console.log("You pressed:", event.key);
+
+  if (event.key === "Enter") {
+    console.log("✅ Form Submitted!");
+  }
+
+});
+
+
+//5.Explain event bubbling
+
+const parent = document.getElementById("parent");
+const child = document.getElementById("child");
+
+// 1. Child Listener
+child.addEventListener("click", () => {
+  alert("Child Clicked!"); 
+  // Note: The event doesn't stop here... it goes up!
+});
+
+// 2. Parent Listener
+parent.addEventListener("click", () => {
+  alert("Parent Clicked!"); 
+  // This runs immediately after the Child alert
+});
+
+
+
+
+
+</script>
+   
+</body>
+</html>
