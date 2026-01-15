@@ -1,0 +1,72 @@
+/* Default (Light Mode) */
+body {
+  background-color: white;
+  color: black;
+  transition: 0.3s; /* Smooth fade effect */
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+/* The Dark Mode Class */
+.dark-mode {
+  background-color: #222; /* Dark Gray */
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/* The 'done' state */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li {
+  cursor: pointer; /* Shows it's clickable */
+  padding: 5px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  margin-left: 10px;
+}
+
+
+
+/* Make the list look like cards */
+li {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  display: flex; 
+  justify-content: space-between; /* Pushes text left, button right */
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* Style the Delete Button */
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}

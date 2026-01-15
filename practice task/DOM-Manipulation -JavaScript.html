@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>1.Define DOM in your own words</h1>
+    
+    <h2>2.Select an element using getElementById()</h2>
+
+       <div id="welcome-msg">Original Text </div>
+
+    <h3>3.Change text of a paragraph</h3>
+
+        <p id="news-update">Breaking News: It is raining.</p>
+<button onclick="updateNews()">Update News</button>
+
+
+<h4>4.Add a new list item dynamically</h4>
+
+
+    <ul id="shopping-list">
+  <li>Milk</li>
+  <li>Eggs</li>
+</ul>
+
+<button onclick="addItem()">Add Bread</button>
+
+
+
+<h5>5.Attach a click event using addEventListener()</h5>
+
+    <button id="alert-btn">Click Me for an Alert</button>
+
+
+
+    <script>
+
+        // 1. JavaScript asks the DOM to find an element
+const header = document.getElementById("main-title");
+
+// 2. JavaScript uses the DOM object to change the text
+header.innerText = "Welcome to the Matrix";
+
+// 3. JavaScript uses the DOM to change the style
+header.style.color = "green";
+
+
+//2.Select an element using getElementById()
+
+// 1. Find the element with the ID "welcome-msg"
+// Store it inside a variable named "pageTitle"
+const pageTitle = document.getElementById("welcome-msg");
+
+// 2. Use the variable to change the text
+pageTitle.innerText = "Welcome to the Dashboard!";
+
+// 3. Change the font style
+pageTitle.style.fontFamily = "Arial";
+
+
+//3.Change text of a paragraph
+
+
+function updateNews() {
+  // 1. Select the paragraph
+  const content = document.getElementById("news-update");
+
+  // 2. Change the text
+  content.innerText = "Breaking News: The sun is finally out!";
+  
+  // Optional: You can see the change in the console too
+  console.log("Text updated successfully.");
+}
+
+
+//4.Add a new list item dynamically
+
+function addItem() {
+  // 1. SELECT the parent list (where we want to add the item)
+  const list = document.getElementById("shopping-list");
+
+  // 2. CREATE a new 'li' element
+  // This exists in memory, but not on the page yet
+  const newItem = document.createElement("li");
+
+  // 3. FILL it with text
+  newItem.innerText = "Bread";
+
+  // 4. ATTACH (Append) it to the parent list
+  list.appendChild(newItem);
+}
+
+
+//5.Attach a click event using addEventListener()
+
+    // 1. Select the element
+const button = document.getElementById("alert-btn");
+
+// 2. Attach the "Listener"
+// Syntax: element.addEventListener(eventType, functionToRun)
+button.addEventListener("click", function() {
+  
+  alert("You clicked the button!");
+  console.log("Button click registered.");
+
+});
+
+    </script>
+</body>
+</html>
