@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>1.Define OOP in your own words</h1>
+
+    <div>
+        <ul>
+            <li>Organization: It keeps code clean and grouped logically.</li>
+            <li>Reusability: You don't repeat yourself; you just reuse existing classes.</li>
+            <li>Maintenance: If something breaks in the Car class, you fix it in one place, and all cars update.</li>
+        </ul>
+    </div>
+
+    <h2>2.Create a simple class</h2>
+
+    <h3>3.Explain this keyword</h3>
+
+    <h4>4.Create an array of objects</h4>
+
+    <h5>5.Identify parent and child class</h5>
+
+
+    <script>
+
+        class person {
+  // 1. The Constructor: Runs once when you create the object
+  constructor(name, gender) {
+    this.name = name;   // 'this' refers to the specific object being created
+    this.gender = gender;
+  }
+
+  // 2. A Method: An action the object can perform
+  say() {
+    console.log(this.name + " voice: welcome back!");
+  }
+}
+
+// --- Usage ---
+
+// Create a new instance of Dog
+const speak = new person("Buddy", "Golden Retriever");
+
+// Use the object
+console.log(speak.gender); // Output: Golden Retriever
+speak.say();             // Output: Buddy says: Woof! Woof!
+
+const user = {
+  name: "Alice",
+  sayHello: function() {
+    // 'this' refers to 'user' because 'user' is left of the dot calling this function
+    console.log("Hello, I am " + this.name);
+  }
+};
+
+user.sayHello(); 
+// ^^^
+// Look left of the dot: 'user' is there. 
+// So 'this' = 'user'.
+
+function showColor() {
+  console.log(this.color);
+}
+
+const car1 = { color: "Red", show: showColor };
+const car2 = { color: "Blue", show: showColor };
+
+// calling car1.show() -> 'this' is car1
+car1.show(); // Output: Red
+
+// calling car2.show() -> 'this' is car2
+car2.show(); // Output: Blue
+
+function whoAmI() {
+  console.log(this);
+}
+
+whoAmI(); 
+// No dot to the left. 
+// In a browser, this prints the generic 'Window' object.
+// (In Strict Mode, it is 'undefined').
+
+const inventory = [
+  { id: 1, item: "Laptop", price: 999, inStock: true },
+  { id: 2, item: "Mouse", price: 25, inStock: true },
+  { id: 3, item: "Keyboard", price: 75, inStock: false }
+];
+
+// Get the first object (Index 0)
+console.log(inventory[0]); 
+// Output: { id: 1, item: "Laptop", ... }
+
+// Get the price of the second object (Index 1)
+console.log(inventory[1].price); 
+// Output: 25
+
+inventory.forEach((product) => {
+  console.log(`The ${product.item} costs $${product.price}`);
+});
+
+// Output:
+// The Laptop costs $999
+// The Mouse costs $25
+// The Keyboard costs $75
+
+
+// PARENT CLASS (The General Concept)
+class persons {
+  constructor(name) {
+    this.name = name;
+  }
+  
+  eat() {
+    console.log(`${this.name} is eating.`);
+  }
+}
+
+// CHILD CLASS (The Specific Version)
+// We identify this as the Child because it 'extends' Animal
+class another extends persons {
+  speaking() {
+    console.log("yoo!");
+  }
+}
+
+// CHILD CLASS 2
+class Dog extends persons {
+  bark() {
+    console.log("Woof!");
+  }
+}
+
+    </script>
+</body>
+</html>
