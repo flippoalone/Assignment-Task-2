@@ -9,14 +9,54 @@
 
     <h1>1.Build a grading system using if-else.</h1>
 
+    <input type="number" id="marks" placeholder="Enter marks (0-100)">
+  <button onclick="checkGrade()">Check Grade</button>
+  <p id="result"></p>
+
+
+
+
     <h2>2.Create a login validation using logical operators.</h2>
 
+    <input type="text" id="username" placeholder="Username"><br>
+  <input type="password" id="password" placeholder="Password"><br>
+  <button onclick="validateLogin()">Login</button>
+  <p id="loginResult"></p>
+
+
     <h3>3.Build a simple calculator logic.</h3>
+    <input type="number" id="num1" placeholder="Number 1">
+  <input type="number" id="num2" placeholder="Number 2"><br>
+  <select id="operation">
+    <option value="add">Add</option>
+    <option value="sub">Subtract</option>
+    <option value="mul">Multiply</option>
+    <option value="div">Divide</option>
+  </select>
+  <button onclick="calculate()">Calculate</button>
+  <p id="calcResult"></p>
+
 
     <h4>4.Create a role-based access system using switch.</h4>
 
+     <input type="text" id="role" placeholder="Enter role (admin, editor, viewer)">
+  <button onclick="checkAccess()">Check Access</button>
+  <p id="accessResult"></p>
+
+
+
     <h5>5.Write a discount checker for an e-commerce site.</h5>
 
+    <h2>Discount Checker</h2>
+  <input type="number" id="price" placeholder="Enter product price">
+  <button onclick="checkDiscount()">Check Discount</button>
+  <p id="discountResult"></p>
+
+
 <script src="operators.js"></script>
+<script src="validation.js"></script>
+<script src="Calculator.js"></script>
+<script src="Bases-Access.js"></script>
+<script src="ecommerce.js"></script>
 </body>
 </html>

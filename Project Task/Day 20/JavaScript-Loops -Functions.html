@@ -9,14 +9,53 @@
     
     <h1>1.Multiplication Table Generator (function + loop)</h1>
 
+     <input type="number" id="num" placeholder="Enter a number">
+  <button onclick="generateTable()">Generate</button>
+  <div id="tableResult"></div>
+
+
+
     <h2>2.Simple Calculator using functions</h2>
+
+     <input type="number" id="num1" placeholder="Number 1">
+  <input type="number" id="num2" placeholder="Number 2"><br>
+  <select id="operation">
+    <option value="add">Add</option>
+    <option value="sub">Subtract</option>
+    <option value="mul">Multiply</option>
+    <option value="div">Divide</option>
+  </select>
+  <button onclick="calculate()">Calculate</button>
+  <p id="calcResult"></p>
+
 
     <h3>3.Odd/Even Checker</h3>
 
+     <input type="number" id="num" placeholder="Enter a number">
+  <button onclick="checkOddEven()">Check</button>
+  <p id="result"></p>
+
+
+
     <h4>4.Factorial Calculator</h4>
+
+     <input type="number" id="num" placeholder="Enter a number">
+  <button onclick="calculateFactorial()">Calculate</button>
+  <p id="result"></p>
+
 
     <h5>5.Menu Program using functions</h5>
 
+     <p>Choose an option: 1. Pizza  2. Burger  3. Pasta  4. Exit</p>
+  <input type="number" id="choice" placeholder="Enter choice number">
+  <button onclick="menuProgram()">Submit</button>
+  <p id="menuResult"></p>
+
+
     <script src="loops.js"></script>
+    <script src="second-calculation.js"></script>
+    <script src="odd-event.js"></script>
+    <script src="factorial.js"></script>
+    <script src="menu-program.js"></script>
 </body>
 </html>

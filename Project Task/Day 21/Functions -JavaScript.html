@@ -9,15 +9,66 @@
     
     <h1>1.Calculator Functions (add, subtract, multiply, divide)</h1>
 
+     <input type="number" id="num1" placeholder="Number 1">
+  <input type="number" id="num2" placeholder="Number 2"><br>
+  <select id="operation">
+    <option value="add">Add</option>
+    <option value="sub">Subtract</option>
+    <option value="mul">Multiply</option>
+    <option value="div">Divide</option>
+  </select>
+  <button onclick="calculate()">Calculate</button>
+  <p id="result"></p>
+
+
+
     <h2>2.Odd / Even Checker</h2>
+
+    <h2>Odd/Even Checker</h2>
+  <input type="number" id="num" placeholder="Enter a number">
+  <button onclick="checkOddEven()">Check</button>
+  <p id="result"></p>
+
 
     <h3>3.Area Calculator (circle, rectangle)</h3>
 
+     <select id="shape">
+    <option value="circle">Circle</option>
+    <option value="rectangle">Rectangle</option>
+  </select><br><br>
+
+  <div id="inputs">
+    <input type="number" id="radius" placeholder="Enter radius (for circle)">
+    <input type="number" id="length" placeholder="Enter length (for rectangle)">
+    <input type="number" id="width" placeholder="Enter width (for rectangle)">
+  </div>
+
+  <button onclick="calculateArea()">Calculate Area</button>
+  <p id="areaResult"></p>
+
+
+
     <h4>4.Greeting App using user name</h4>
 
+    <input type="text" id="username" placeholder="Enter your name">
+  <button onclick="greetUser()">Greet</button>
+  <p id="greeting"></p>
+
+
     <h5>5.Simple Menu Program using functions</h5>
+    <h2>Menu Program</h2>
+  <p>Choose an option: 1. Pizza  2. Burger  3. Pasta  4. Exit</p>
+  <input type="number" id="choice" placeholder="Enter choice number">
+  <button onclick="menuProgram()">Submit</button>
+  <p id="menuResult"></p>
+
+
 
 
     <script src="function.js"></script>
+    <script src="second-odd-even.js"></script>
+    <script src="Area calculator.js"></script>
+    <script src="greeting.js"></script>
+    <script src="Menu-program.js"></script>
 </body>
 </html>

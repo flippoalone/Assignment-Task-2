@@ -7,12 +7,12 @@ function add(a, b) { return a + b; }
       let n1 = parseFloat(document.getElementById("num1").value);
       let n2 = parseFloat(document.getElementById("num2").value);
       let op = document.getElementById("operation").value;
-      let res;
+      let result;
 
-      if (op === "add") res = add(n1, n2);
-      else if (op === "sub") res = sub(n1, n2);
-      else if (op === "mul") res = mul(n1, n2);
-      else if (op === "div") res = div(n1, n2);
+      if (op === "add") result = add(n1, n2);
+      else if (op === "sub") result = sub(n1, n2);
+      else if (op === "mul") result = mul(n1, n2);
+      else if (op === "div") result = div(n1, n2);
 
-      document.getElementById("result").innerText = "Result: " + res;
+      document.getElementById("calcResult").innerText = "Result: " + result;
     }

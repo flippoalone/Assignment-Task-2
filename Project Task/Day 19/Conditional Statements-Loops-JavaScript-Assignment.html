@@ -8,16 +8,48 @@
 <body>
     
     <h1>1.Simple Calculator using if</h1>
+     <input type="number" id="num1" placeholder="Number 1">
+  <input type="number" id="num2" placeholder="Number 2"><br>
+  <input type="text" id="operator" placeholder="Enter operator (+, -, *, /)">
+  <button onclick="calculate()">Calculate</button>
+  <p id="result"></p>
+
 
     <h2>2.Multiplication Table using loop</h2>
 
+     <input type="number" id="num" placeholder="Enter a number">
+  <button onclick="generateTable()">Generate Table</button>
+  <div id="tableResult"></div>
+
     <h3>3.Login Validation (username & password check)</h3>
+
+    <h2>Login Validation</h2>
+  <input type="text" id="username" placeholder="Username"><br>
+  <input type="password" id="password" placeholder="Password"><br>
+  <button onclick="validateLogin()">Login</button>
+  <p id="loginResult"></p>
+
 
     <h4>4.Grade System using else if</h4>
 
+     <input type="number" id="marks" placeholder="Enter marks (0-100)">
+  <button onclick="checkGrade()">Check Grade</button>
+  <p id="gradeResult"></p>
+
+
     <h5>5.Menu Program using switch</h5>
+
+    <p>Choose an option: 1. Pizza  2. Burger  3. Pasta  4. Exit</p>
+  <input type="number" id="choice" placeholder="Enter choice number">
+  <button onclick="menuProgram()">Submit</button>
+  <p id="menuResult"></p>
+
 
 
     <script src="conditional.js"></script>
+    <script src="genrate-table.js"></script>
+    <script src="Login.js"></script>
+    <script src="grade-system.js"></script>
+    <script src="switch.js"></script>
 </body>
 </html>

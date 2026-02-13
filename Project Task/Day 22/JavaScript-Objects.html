@@ -8,17 +8,44 @@
 <body>
 
     <h1>1.Student Record Object (name, age, marks)</h1>
+    <button onclick="showStudent()">Show Student</button>
+  <p id="studentResult"></p>
+
+
 
     <h2>2.Car Object with method to display details</h2>
 
+     <button onclick="showCar()">Show Car</button>
+  <p id="carResult"></p>
+
+
     <h3>3.User Profile Object with update option</h3>
+    <p id="profileResult"></p>
+  <input type="text" id="newName" placeholder="Enter new name">
+  <button onclick="updateProfile()">Update Name</button>
+
 
     <h4>4.Product Object (price update logic)</h4>
 
+    <p id="productResult"></p>
+  <input type="number" id="newPrice" placeholder="Enter new price">
+  <button onclick="updatePrice()">Update Price</button>
+
+
     <h5>5.Simple Bank Account Object (deposit, withdraw)</h5>
+
+    <p id="accountResult"></p>
+  <input type="number" id="amount" placeholder="Enter amount">
+  <button onclick="deposit()">Deposit</button>
+  <button onclick="withdraw()">Withdraw</button>
+
+
 
 
 
     <script src="objects.js"></script>
+    <script src="car-object.js"></script>
+    <script src="profile.js"></script>
+    <script src="Bank-account.js"></script>
 </body>
 </html>

@@ -8,21 +8,52 @@
 <body>
     
     <h1>1.Safe Calculator using try...catch</h1>
+     <input type="number" id="num1" placeholder="Number 1">
+  <input type="number" id="num2" placeholder="Number 2"><br>
+  <select id="operation">
+    <option value="add">Add</option>
+    <option value="sub">Subtract</option>
+    <option value="mul">Multiply</option>
+    <option value="div">Divide</option>
+  </select>
+  <button onclick="calculate()">Calculate</button>
+  <p id="result"></p>
+
+
 
     <h2>2.JSON Parser with error handling</h2>
+    <textarea id="jsonInput" placeholder='Enter JSON (e.g. {"name":"Akash"})'></textarea><br>
+  <button onclick="parseJSON()">Parse JSON</button>
+  <p id="result"></p>
+
+
 
     <h3>3.Login Validation with error messages</h3>
+     <input type="text" id="username" placeholder="Username"><br>
+  <input type="password" id="password" placeholder="Password"><br>
+  <button onclick="validateLogin()">Login</button>
+  <p id="result"></p>
+
 
     <h4>4.Debug a broken JavaScript program</h4>
+    <button onclick="runCode()">Run Code</button>
+  <p id="result"></p>
+
+
 
 
     <h5>5.Custom Error Message Display</h5>
+     <input type="number" id="age" placeholder="Enter your age">
+  <button onclick="checkAge()">Submit</button>
+  <p id="result"></p>
 
 
-    <input id="age-input" placeholder="Enter your age">
-<button onclick="checkAge()">Verify</button>
-<p id="error-display" style="color: red; font-weight: bold;"></p>
+    
 
     <script src="understanig.js"></script>
+    <script src="safe-calculator.js"></script>
+    <script src="parser.js"></script>
+    <script src="validation-login.js"></script>
+    <script src="debug.js"></script>
 </body>
 </html>
